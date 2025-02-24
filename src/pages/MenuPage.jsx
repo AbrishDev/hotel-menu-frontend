@@ -7,7 +7,7 @@ const MenuPage = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/menu") // Backend API
+        fetch("https://qr-menu-backend-wc4q.onrender.com/api/menu") // Backend API
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch menu");
