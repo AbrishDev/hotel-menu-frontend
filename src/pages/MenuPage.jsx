@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/menu.css"; // Import updated CSS file
 
 const MenuPage = () => {
     const [menu, setMenu] = useState([]);
@@ -27,12 +28,13 @@ const MenuPage = () => {
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div style={{ textAlign: "center" }}>
-            <h2>Menu</h2>
-            <ul style={{ listStyle: "none", padding: 0 }}>
+        <div className="menu-container">
+            <h1 className="hotel-name">🍽 Welcome to Naky Hotel 🍽</h1> {/* Improved visibility */}
+            <ul className="menu-list">
                 {menu.map((item, index) => (
-                    <li key={index} style={{ marginBottom: "10px", fontSize: "18px" }}>
-                        <strong>{item.name}</strong> - ${item.price}
+                    <li key={index} className="menu-item">
+                        <span className="menu-item-name">{item.name}</span>
+                        <span className="menu-item-price">{item.price}</span>
                     </li>
                 ))}
             </ul>
