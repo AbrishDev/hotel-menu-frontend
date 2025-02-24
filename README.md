@@ -1,8 +1,48 @@
-# React + Vite
+# QR Code-Based Hotel Menu (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+This is the **frontend** of a **QR Code-Based Hotel Menu** system. Customers can scan a QR code to access the digital menu, view food items, and check prices without needing a physical menu. The interface is designed to be elegant, mobile-responsive, and user-friendly.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 📱 **Mobile-Responsive Design** – Works smoothly on all screen sizes.
+- 🎨 **Stylish UI** – Classic hotel menu styling with a beautiful background.
+- 📋 **Menu Display** – Fetches and displays menu items dynamically from the backend.
+- 🔄 **Real-time Updates** – Automatically reflects changes from the backend.
+- 🌍 **No Installation Required** – Accessible through a simple QR code scan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- **React.js** – Frontend framework
+- **CSS** – Custom styling for a vintage menu feel
+- **Fetch API** – To retrieve menu data from the backend
+- **Font & Icons** – Georgia font for a classic look
+
+## 📸 UI Preview
+![Screenshot](./screenshot.png) 
+
+## 📥 Installation & Setup
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/AbrishDev/hotel-menu-frontend.git
+   cd qr-menu-frontend
+   ```
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+3. **Start the Development Server**
+   ```sh
+   npm start
+   ```
+
+## 📌 Future Enhancements
+- 🛒 **Order System** – Allow users to place orders directly.
+- 🌐 **Multi-Language Support** – Provide different language options.
+- 💳 **Payment Integration** – Enable digital payments.
+
+## 🤝 Contributing
+Want to improve this project? Feel free to fork, create a branch, and submit a pull request!
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+
