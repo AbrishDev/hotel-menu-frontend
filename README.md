@@ -23,7 +23,7 @@ This is the **frontend** of a **QR Code-Based Hotel Menu** system. Customers can
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/AbrishDev/hotel-menu-frontend.git
-   cd qr-menu-frontend
+   cd hotel-menu-frontend
    ```
 2. **Install Dependencies**
    ```sh
