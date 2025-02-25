@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     const [editingItem, setEditingItem] = useState(null);
     const [newItem, setNewItem] = useState({ name: "", price: "", category: "" });
     const navigate = useNavigate();
-    const menuUrl = "https://hotel-menu-frontend-kappa.vercel.app/Menu"; // Replace with your actual menu link
+    const menuUrl = "https://hotel-menu-frontend-kappa.vercel.app"; // Replace with your actual menu link
 
 useEffect(() => {
     const token = localStorage.getItem("token");

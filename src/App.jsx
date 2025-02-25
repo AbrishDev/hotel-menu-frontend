@@ -7,8 +7,8 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/Menu" element={<MenuPage />} />
-                <Route path="/" element={<AdminLogin />} />
+                <Route path="/" element={<MenuPage />} />
+                <Route path="/admin-login" element={<AdminLogin />} />
                 <Route path="/admin" element={<AdminDashboard />} />
             </Routes>
         </Router>
@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App;
+
