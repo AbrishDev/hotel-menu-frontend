@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/admin-login", "destination": "./pages/AdminLogin.jsx" },
+      { "source": "/admin", "destination": "./pages/AdminDashboard.jsx" }
+    ]
+  }
+  
