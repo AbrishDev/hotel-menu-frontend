@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/admin.css"; // Create a new CSS file for admin styles
 import { useNavigate } from "react-router-dom";
-import QRCode from "qrcode.react"; // Import the QR code library
+
 
 const AdminDashboard = () => {
     const [menu, setMenu] = useState([]);
@@ -10,7 +10,6 @@ const AdminDashboard = () => {
     const [editingItem, setEditingItem] = useState(null);
     const [newItem, setNewItem] = useState({ name: "", price: "", category: "" });
     const navigate = useNavigate();
-    const menuUrl = "https://hotel-menu-frontend-kappa.vercel.app"; // Replace with your actual menu link
 
 useEffect(() => {
     const token = localStorage.getItem("token");
@@ -115,16 +114,6 @@ useEffect(() => {
         }
     };
     
-    const downloadQR = () => {
-        const canvas = document.getElementById("menuQR").querySelector("canvas");
-        const pngUrl = canvas.toDataURL("image/png");
-        const link = document.createElement("a");
-        link.href = pngUrl;
-        link.download = "menu_qr_code.png";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
     
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
@@ -132,13 +121,6 @@ useEffect(() => {
     return (
         <div className="admin-container">
             <h1>Naky Hotel Menu Dashboard</h1>
-
-            {/* QR Code Section */}
-            <div className="qr-code-section">
-    <h2>QR Code for Menu</h2>
-    <QRCode id="menuQR" value={menuUrl} size={200} />
-    <button onClick={() => downloadQR()}>Download QR Code</button>
-</div>
 
             {/* Add New Menu Item */}
             <form onSubmit={handleAddItem} className="admin-menu-item">
