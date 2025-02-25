@@ -1,0 +1,156 @@
+/* Dark Theme for Admin Panel */
+
+:root {
+    --primary-color: #1e1e2f;
+    --secondary-color: #25253a;
+    --accent-color: #4a90e2;
+    --text-color: #ffffff;
+    --muted-text: #b0b0c3;
+    --button-hover: #357abd;
+    --danger-color: #e74c3c;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+/* Login Form */
+.admin-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.admin-login-form {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin-login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.admin-login-form button {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.admin-login-form button:hover {
+    background: var(--button-hover);
+}
+
+/* Admin Dashboard */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.admin-menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.admin-menu-item button {
+    background: var(--danger-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.admin-menu-item button:hover {
+    background: #c0392b;
+}
+/* Buttons */
+.edit-btn, .delete-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Editable input fields */
+.admin-menu-item input {
+    width: 80px;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+    border-radius: 3px;
+}
+
+.admin-menu-item button {
+    margin-left: 5px;
+}
